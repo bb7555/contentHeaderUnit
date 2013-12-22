@@ -51,9 +51,9 @@ class LocationMappingsController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+		
+
+		$this->renderJSON($this->loadModel($id));
 	}
 
 	/**
@@ -141,6 +141,23 @@ class LocationMappingsController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+	}
+
+	/**
+	 * Return data to browser as JSON
+	 * @param array $data
+	 */
+	protected function renderJSON($data)
+	{
+	    header('Content-type: application/json');
+	    echo CJSON::encode($data);
+
+	    foreach (Yii::app()->log->routes as $route) {
+	        if($route instanceof CWebLogRoute) {
+	            $route->enabled = false; // disable any weblogroutes
+	        }
+	    }
+	    Yii::app()->end();
 	}
 
 	/**
