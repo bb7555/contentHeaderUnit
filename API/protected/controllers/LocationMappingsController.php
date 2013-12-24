@@ -53,7 +53,16 @@ class LocationMappingsController extends Controller
 	{
 		
 
-		$this->renderJSON($this->loadModel($id));
+		//$this->renderJSON($this->loadModel($id));
+
+		 header('Content-type: application/json');
+
+		  $LocationMappings = LocationMappings::model()->findByPK((int)$id);
+
+		  $json = CJSON::encode($LocationMappings);
+		  echo "dyno".$id."(".$json.")";
+
+		  Yii::app()->end();
 	}
 
 	/**

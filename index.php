@@ -149,16 +149,11 @@
                 <!-- INITIAL HEADER CONTENT -->
 
                 <div class="headerContent">
+                        <span class="headerContentShowHideBtn"></span>
+                        <div class="hiddenHeaderContent"></div>
 
-                    <span class="headerContentShowHideBtn"></span>
-
-                    <p class="first">This is the initial content seen when some one come to the page. We will test this with more and more content to ensure it will close up on just about any height that David could put in it.</p>
-
-                    <div class="hiddenHeaderContent">
-
-                    <p>They will see more depending on what is placed here</p>
-
-                    </div>
+                    
+                   <!-- Dynamic Content -->
 
                 </div>
 
@@ -202,7 +197,7 @@
 
                     <div class="defaultInnerContent" data-innerContentId="1">
 
-                        <h2>Default Inner Content 1-1</h2>
+                        <!-- Dynamic Content -->
 
                     </div>
 

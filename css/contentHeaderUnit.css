@@ -158,8 +158,6 @@ p.first
 
         cursor: pointer;
 
-        margin: 10px 10px 0 0;
-
         background-image: url(../images/up_green_arrow.png);
 
         background-repeat: repeat-y;
@@ -171,6 +169,10 @@ p.first
         height: 25px;
 
         background-position-y: 0px;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        background-color: #000;
 
 }
 

@@ -207,3 +207,39 @@ Stack trace:
 #26 {main}
 REQUEST_URI=/contentHeaderUnit/API/index.php?r=gii
 ---
+2013/12/23 04:55:27 [error] [php] Undefined index: callback (/var/www/contentHeaderUnit/API/protected/controllers/LocationMappingsController.php:63)
+Stack trace:
+#0 /var/www/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): LocationMappingsController->runAction()
+#3 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): LocationMappingsController->filterAccessControl()
+#6 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(265): LocationMappingsController->runActionWithFilters()
+#9 /var/www/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): LocationMappingsController->run()
+#10 /var/www/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/contentHeaderUnit/API/index.php(13): CWebApplication->run()
+REQUEST_URI=/contentHeaderUnit/API/index.php?r=locationMappings/view&id=1
+in /var/www/contentHeaderUnit/API/protected/controllers/LocationMappingsController.php (63)
+in /var/www/contentHeaderUnit/API/index.php (13)
+2013/12/23 04:55:56 [error] [php] Undefined index: callback (/var/www/contentHeaderUnit/API/protected/controllers/LocationMappingsController.php:63)
+Stack trace:
+#0 /var/www/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): LocationMappingsController->runAction()
+#3 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): LocationMappingsController->filterAccessControl()
+#6 /var/www/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/yii-1.1.14.f0fee9/framework/web/CController.php(265): LocationMappingsController->runActionWithFilters()
+#9 /var/www/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): LocationMappingsController->run()
+#10 /var/www/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /var/www/contentHeaderUnit/API/index.php(13): CWebApplication->run()
+REQUEST_URI=/contentHeaderUnit/API/index.php?r=locationMappings/view&id=1
+in /var/www/contentHeaderUnit/API/protected/controllers/LocationMappingsController.php (63)
+in /var/www/contentHeaderUnit/API/index.php (13)
