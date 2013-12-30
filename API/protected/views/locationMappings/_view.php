@@ -21,5 +21,13 @@
 	<?php echo CHtml::encode($data->lvl_2); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('lvl_3')); ?>:</b>
+	<?php echo CHtml::encode($data->lvl_3); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('lvl_4')); ?>:</b>
+	<?php echo CHtml::encode($data->lvl_4); ?>
+	<br />
+
 
 </div>

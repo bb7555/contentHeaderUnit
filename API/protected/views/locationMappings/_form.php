@@ -37,6 +37,18 @@
 		<?php echo $form->error($model,'lvl_2'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'lvl_3'); ?>
+		<?php echo $form->textField($model,'lvl_3',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'lvl_3'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'lvl_4'); ?>
+		<?php echo $form->textField($model,'lvl_4',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'lvl_4'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

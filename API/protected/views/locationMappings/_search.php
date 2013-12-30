@@ -31,6 +31,16 @@
 		<?php echo $form->textField($model,'lvl_2',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'lvl_3'); ?>
+		<?php echo $form->textField($model,'lvl_3',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'lvl_4'); ?>
+		<?php echo $form->textField($model,'lvl_4',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

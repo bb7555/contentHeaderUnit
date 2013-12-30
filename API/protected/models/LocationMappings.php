@@ -8,6 +8,8 @@
  * @property string $content
  * @property string $lvl_1
  * @property string $lvl_2
+ * @property string $lvl_3
+ * @property string $lvl_4
  */
 class LocationMappings extends CActiveRecord
 {
@@ -27,11 +29,11 @@ class LocationMappings extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content, lvl_1, lvl_2', 'required'),
-			array('lvl_1, lvl_2', 'length', 'max'=>255),
+			array('content, lvl_1, lvl_2, lvl_3, lvl_4', 'required'),
+			array('lvl_1, lvl_2, lvl_3, lvl_4', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, content, lvl_1, lvl_2', 'safe', 'on'=>'search'),
+			array('id, content, lvl_1, lvl_2, lvl_3, lvl_4', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,8 +56,10 @@ class LocationMappings extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'content' => 'Content',
-			'lvl_1' => 'Lvl 1',
-			'lvl_2' => 'Lvl 2',
+			'lvl_1' => 'Level One URL',
+			'lvl_2' => 'Level Two URL',
+			'lvl_3' => 'Level Three URL',
+			'lvl_4' => 'Level Four URL',
 		);
 	}
 
@@ -81,6 +85,8 @@ class LocationMappings extends CActiveRecord
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('lvl_1',$this->lvl_1,true);
 		$criteria->compare('lvl_2',$this->lvl_2,true);
+		$criteria->compare('lvl_3',$this->lvl_3,true);
+		$criteria->compare('lvl_4',$this->lvl_4,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
